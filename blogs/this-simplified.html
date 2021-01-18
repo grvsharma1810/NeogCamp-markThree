@@ -33,13 +33,13 @@
                 <br>
                 I will be specific to javascript in examples. "this" is one of the most confusing concepts for a beginner. The basic idea of "this" is almost same in every programming language, be it java, javascript, python, etc. "this" is something which tells what is the current context of the execution. Now, what's an execution context? Let's take an example -
                 <pre>
-                const name = 'Rohan';
-                function evil(){
-                    console.log(this.name);
-                }
-                const obj = {name : 'Aditya', age : 20}
-                evil();
-                obj.evil();
+    const name = 'Rohan';
+    function evil(){
+        console.log(this.name);
+    }
+    const obj = {name : 'Aditya', age : 20}
+    evil();
+    obj.evil();
                 </pre>
                 "this" refers to the owner of the current executing context. Here when evil() is called, current executing context is global so the owner is a global object. In case of browser, the global object is a window but in strict mode, the function will give 'undefined'.
                 When obj.evil() will be called, the executing context is the current object that is obj. So the function evil() will be executed in the context of the object(obj) and the output of this line will be 'Aditya'.

@@ -31,17 +31,18 @@
 
                 So, JSX stands for Javascript XML. It is a beautiful fusion of HTML and Javascript. It enables us to write Javascript in HTML or vice-versa. JSX in mainly used in React to render the components for Virtual DOM (React has a concept of Virtual DOM). So, what it does is, it generates a lightweight view of the components of DOM (which is then mapped to actual DOM components). Here, is an example -
                 <pre>
-                class comp extends Component{
-                    getName(){
-                        return "Gaurav";
-                    }
-                    render(){
-                        return(
-                            &ltdiv%gt
-                                &lth1&gt{this.getName()}&lt/h1&gt
-                            &lt/div%gt
-                         );
-                    }
+    class comp extends Component{
+        getName(){
+            return "Gaurav";
+        }
+        render(){
+            return(
+                &ltdiv%gt
+                    &lth1&gt{this.getName()}&lt/h1&gt
+                &lt/div%gt
+                );
+        }
+    }
                 </pre>
                 Can you see what the render function is returning? That's JSX. Inside &lth1%gt tag, getName() method is called. Wherever we need to write javascript, we write it inside curly braces. So, the render function will paint the name "Gaurav" on the screen. JSX uses ES6 features and internally it is converted to pure javascript code by something called as BABEL. Actually BABEL is a compiler. Each tag calls a function React.createElement() internally.
                 
