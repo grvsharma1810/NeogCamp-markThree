@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Gaurav Sharma</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <nav class="navigation container">
@@ -20,35 +20,36 @@
                 <a class="link" href="/blogs.html">blogs</a>
             </li>
         </ul>
-    </nav>
-
-    <header class="hero">
-        <img class="hero-img" src="/images/hero.svg">
-        <h1 class="hero-heading">Hey! I am Gaurav. I am a <span class="heading-inverted">Web Developer</span></h1>
-    </header>
-
-    <section class="section ow">
-        <div class="container-center">
-            <h1>technologies</h1>
-            <p>I am familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ExpressJS, Angular, SQL and Web Hosting.</p>
-        </div>        
-    </section>
+    </nav>    
 
     <section class="section">
         <div class="container-center">
-            <h1>projects</h1>
-            <p>I am passionate about building projects and showcasing them. I believe in learning by building projects. Here are some of my projects</p>
-            <a class="link link-primary" href="/projects.html">See Projects</a>
-        </div>        
-    </section>
+            <h2>"this" Simplified</h2>
+            <small>January, 2021</small>
+            <p>                               
+                There was a time when I have seen myself scared of "this" keyword and this is not an exaggeration. But now here I am to explain to you what the hell is "this".
 
-    <section class="section ow">
-        <div class="container-center">
-            <h1>blogs</h1>
-            <p>I am highly enthusiastic about sharing my knowledge and views with everyone through blogs.</p>
-            <a class="link link-primary" href="/blogs.html">Read My Blogs</a>
+                So let's start! 
+                <br>
+                I will be specific to javascript in examples. "this" is one of the most confusing concepts for a beginner. The basic idea of "this" is almost same in every programming language, be it java, javascript, python, etc. "this" is something which tells what is the current context of the execution. Now, what's an execution context? Let's take an example -
+                <pre>
+                const name = 'Rohan';
+                function evil(){
+                    console.log(this.name);
+                }
+                const obj = {name : 'Aditya', age : 20}
+                evil();
+                obj.evil();
+                </pre>
+                "this" refers to the owner of the current executing context. Here when evil() is called, current executing context is global so the owner is a global object. In case of browser, the global object is a window but in strict mode, the function will give 'undefined'.
+                When obj.evil() will be called, the executing context is the current object that is obj. So the function evil() will be executed in the context of the object(obj) and the output of this line will be 'Aditya'.
+
+                This is the basic concept of 'this'.
+                <br><br>
+                Peace!!😃    
+            </p>
         </div>        
-    </section>
+    </section>    
 
     <footer class="footer">
         <div class="footer-header">Connect With Me</div>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Gaurav Sharma</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">GAURAV KUMAR SHARMA</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>    
+
+    <section class="section">
+        <div class="container-center">
+            <h2>JSX 😕</h2>
+            <small>January, 2021</small>
+            <p>                               
+                Yes, let's do it.<br>
+
+                So, JSX stands for Javascript XML. It is a beautiful fusion of HTML and Javascript. It enables us to write Javascript in HTML or vice-versa. JSX in mainly used in React to render the components for Virtual DOM (React has a concept of Virtual DOM). So, what it does is, it generates a lightweight view of the components of DOM (which is then mapped to actual DOM components). Here, is an example -
+                <pre>
+                class comp extends Component{
+                    getName(){
+                        return "Gaurav";
+                    }
+                    render(){
+                        return(
+                            &ltdiv%gt
+                                &lth1&gt{this.getName()}&lt/h1&gt
+                            &lt/div%gt
+                         );
+                    }
+                </pre>
+                Can you see what the render function is returning? That's JSX. Inside &lth1%gt tag, getName() method is called. Wherever we need to write javascript, we write it inside curly braces. So, the render function will paint the name "Gaurav" on the screen. JSX uses ES6 features and internally it is converted to pure javascript code by something called as BABEL. Actually BABEL is a compiler. Each tag calls a function React.createElement() internally.
+                
+                This code will be converted into :<br>
+                React.createElement("div", null, React.createElement("h1", null, (void 0).getName()));
+                
+                as you can see here:  https://babeljs.io/repl
+                
+                Writing JSX : - <br>
+                It is really easy to write JSX. Here are some rules you have to follow :
+                <ol>
+                    <li>
+                        The class keyword used in HTML tags like &ltdiv class="something"&gt is replaced by className.
+                    </li>    
+                    <li>
+                        for, while, if-else can't be used, only expressions are allowed in javascript.
+                    </li>
+                    <li>
+                        Dataflow is taken care of using Props (an abbreviation of Properties).     
+                    </li>
+                </ol>                                
+                <br><br>
+                That's it for JSX.
+                Peace!!😃    
+            </p>
+        </div>        
+    </section>    
+
+    <footer class="footer">
+        <div class="footer-header">Connect With Me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="social-link-list-item">                   
+                <img src="https://img.icons8.com/fluent-systems-filled/24/ffffff/github.png"/> 
+                <a class="link" href="https://www.github.com/grvsharma1810">                    
+                    github
+                </a>                
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/android/24/ffffff/linkedin.png"/>
+                <a class="link" href="https://www.linkedin.com/in/gaurav-kr-sharma/">                    
+                    linkedin                    
+                </a>                
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/android/24/ffffff/twitter.png"/>
+                <a class="link" href="https://www.twitter.com/Gauravsh8280601">                    
+                    twitter
+                </a>
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
+                <a class="link" href="https://www.instagram.com/be_a_sharma/">                    
+                    instagram
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
