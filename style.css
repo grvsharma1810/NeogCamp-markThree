@@ -6,10 +6,6 @@
     --dark-gray: #4B5563;
 }
 
-*{
-    width:100%
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;    
@@ -17,6 +13,10 @@ body{
 
 hr{
     margin: 2rem 0rem;
+}
+
+ul{
+    padding-inline-start:0;
 }
 
 .project-heading{
@@ -54,6 +54,11 @@ hr{
     color: var(--secondary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+}
+
+.list{
+    padding-left:1rem;
+    padding-right:1rem;
 }
 
 .list-non-bullet{
@@ -94,11 +99,11 @@ hr{
     padding: 2rem;    
 }
 
-.hero .hero-img{
+.hero .hero-img{    
     max-width: 350px;
-    width:auto;
-    display: block;
-    margin: auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero .hero-heading{
