@@ -1,111 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+    <title>Home | Gaurav Sharma</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Gaurav's component library</h1>
-    <p>I am attending neog.camp and I want to make
-        all my projects look good and consistent.</p>
-
-    <hr>
-
-    <h2>@typography</h2>
-    <h1>This is biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <p>This is paragraph text.</p>
-    <small>This is relatively small.</small>
-
-    <hr>
-
-    <h2>@containers</h2>
-    <h3>fluid container</h3>
-    <div>This is a centered container. It will go from End to End</div>
-
-    <h3>centered container</h3>
-    <div>This is centered container nad it will got till the specified width</div>
-
-    <hr>
-
-    <h3>@links</h3>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
-
-    <hr>
-
-    <h2>@lists</h2>
-    <h3>unordered list</h3>
-    <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
-    </ul>
-
-    <h3> reverse ordered list</h3>
-
-    <ol>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>cake</li>
-    </ol>
-
-    <hr>
-
-    <h2>@nav</h2>
-
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">GAURAV KUMAR SHARMA</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">projects</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="/blogs.html">blogs</a>
             </li>
         </ul>
     </nav>
 
-    <hr>
-
-    <h2>@header</h2>
-
-    <header>
-        <img src="images/hero.svg">
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="/images/hero.svg">
+        <h1 class="hero-heading">Hey! I am Gaurav. I am a <span class="heading-inverted">Web Developer</span></h1>
     </header>
 
-    <hr>
-    <h2>@section</h2>
-
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section ow">
+        <div class="container-center">
+            <h1>technologies</h1>
+            <p>I am familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ExpressJS, Angular, SQL and Web Hosting.</p>
+        </div>        
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray background</p>
+    <section class="section">
+        <div class="container-center">
+            <h1>projects</h1>
+            <p>I am passionate about building projects and showcasing them. I believe in learing by building projects. Here are some of my projects</p>
+            <a class="link link-primary" href="/">See Projects</a>
+        </div>        
     </section>
 
-    <hr>
+    <section class="section ow">
+        <div class="container-center">
+            <h1>blogs</h1>
+            <p>I am highly enthusiastic about sharing my knowledge and views with everyone through blogs.</p>
+            <a class="link link-primary" href="/">Read My Blogs</a>
+        </div>        
+    </section>
 
-    <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-header">Connect To Me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="social-link-list-item">                   
+                <img src="https://img.icons8.com/fluent-systems-filled/24/ffffff/github.png"/> 
+                <a class="link" href="https://github.com/grvsharma1810">                    
+                    github
+                </a>                
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/android/24/ffffff/linkedin.png"/>
+                <a class="link" href="https://linkedin.com/gaurav-kr-sharma">                    
+                    linkedin                    
+                </a>                
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/android/24/ffffff/twitter.png"/>
+                <a class="link" href="https://twitter.com/Gauravsh8280601">                    
+                    twitter
+                </a>
+            </li>
+            <li class="social-link-list-item">  
+                <img src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
+                <a class="link" href="https://www.instagram.com/be_a_sharma/">                    
+                    instagram
+                </a>
+            </li>
         </ul>
     </footer>
-
 </body>
-
 </html>
